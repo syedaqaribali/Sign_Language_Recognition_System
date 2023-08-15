@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on january 2023
-@author: maqbool,talha,haseeb,abdullah,shahrukh
+@author: SYED AQARIB ALI
 """
 from PIL import Image
 import os
@@ -21,15 +21,15 @@ import cv2
 
 
 
-# im = Image.open(r"C:\Users\square\Desktop\TOOBA\UNI\SEM6\ML\Final Project\Gesture Image Data/0/1.jpg")
+# im = Image.open(r"C:\Users\square\Desktop\AQARIB\UNI\SEM6\ML\Final Project\Gesture Image Data/0/1.jpg") //path
 # im.show()
 
 
 
-# original_folder=r"C:\Users\square\Desktop\TOOBA\UNI\SEM6\ML\Final Project\Gesture Image Data/9"
-# train_folder= r"C:\Users\square\Desktop\TOOBA\UNI\SEM6\ML\Final Project\train\Z"
-# validate_folder=r"C:\Users\square\Desktop\TOOBA\UNI\SEM6\ML\Final Project\validate\9"
-# test_folder= r"C:\Users\square\Desktop\TOOBA\UNI\SEM6\ML\Final Project\test\Z"
+# original_folder=r"C:\Users\square\Desktop\AQARIB\UNI\SEM6\ML\Final Project\Gesture Image Data/9"
+# train_folder= r"C:\Users\square\Desktop\AQARIB\UNI\SEM6\ML\Final Project\train\Z"
+# validate_folder=r"C:\Users\square\Desktop\AQARIB\UNI\SEM6\ML\Final Project\validate\9"
+# test_folder= r"C:\Users\square\Desktop\AQARIB\UNI\SEM6\ML\Final Project\test\Z"
 
 # # os.mkdir(train_folder)
 # # os.mkdir(validate_folder)
@@ -54,9 +54,9 @@ import cv2
 #     shutil.copy(src_path, dst_path)
 
 
-train_path= r"D:\maqbool project\Final project\New Dataset\train"
-validate_path= r"D:\maqbool project\Final project\New Dataset\validate"
-test_path= r"D:\maqbool project\Final project\New Dataset\test"
+train_path= r"D:\AQARIB project\Final project\New Dataset\train"
+validate_path= r"D:\AQARIB project\Final project\New Dataset\validate"
+test_path= r"D:\AQARIB project\Final project\New Dataset\test"
 
 train_batches = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input).flow_from_directory(directory=train_path, target_size=(64,64), class_mode='categorical', batch_size=10,shuffle=True)
 validate_batches = ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input).flow_from_directory(directory=validate_path, target_size=(64,64), class_mode='categorical', batch_size=10,shuffle=True)
