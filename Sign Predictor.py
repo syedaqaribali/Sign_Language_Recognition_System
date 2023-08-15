@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on january 2023
-@author: maqbool,talha,haseeb,abdullah,shahrukh
+@author: SYED AQARIB ALI
 """
 
 import numpy as np
@@ -12,7 +12,7 @@ from keras.preprocessing.image import ImageDataGenerator
 import tensorflow as tf
 
 word_dict = {0:'0',1:'1',2:'2',3:'3',4:'4',5:'5',6:'6',7:'7',8:'8',9:'9',10:'A',11:'B',12:'C',13:'D',14:'E',15:'F',16:'G',17:'H',18:'I',19:'J',20:'K',21:'L',22:'M',23:'N',24:'O',25:'P',26:'Q',27:'R',28:'S',29:'T',30:'U',31:'V',32:'W',33:'X',34:'Y',35:'Z'}  
-model = keras.models.load_model(r"D:\maqbool project\Final project\best_model_dataflair3.h5")
+model = keras.models.load_model(r"D:\AQARIB project\Final project\best_model_dataflair3.h5")
 background = None
 accumulated_weight = 0.5
 ROI_top = 100
